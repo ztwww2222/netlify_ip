@@ -1,0 +1,19 @@
+# netlify.toml
+
+[build]
+  publish = "public"
+
+[[edge_functions]]
+  path = "/ip-geo"
+  function = "ip-geo"
+
+[[edge_functions]]
+  path = "/"
+  function = "ip-geo"
+
+# 重定向规则（可选）
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/ip-geo/:splat"
+  status = 200
+  force = false
