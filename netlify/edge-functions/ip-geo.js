@@ -325,7 +325,7 @@ function generateHTML(countryCN, cityCN, ip, networkType, isp) {
       <span class="value" style="font-size: 16px;">${isp}</span>
     </div>` : ''}
     <div class="tip">
-      💡 API示例: https://ipsget.netlify.app/?ip=36.16.21.11
+      💡 API示例: https://ipsget.netlify.app/?ip=46.16.21.11
     </div>
   </div>
 </body>
